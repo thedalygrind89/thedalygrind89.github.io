@@ -1,0 +1,313 @@
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+
+
+
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+
+
+
+<style>
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+  @import url("https://use.typekit.net/ngk8tvu.css");
+</style>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<h1 id="directions">Click the page corners to turn the page.</h1>
+
+<div class="flipbook-viewport" style="display:none;" id="myDiv" class="animate-bottom">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/cover2.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/updatedcover.ogg" type="audio/ogg">
+  					<source src="audio/updatedcover.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+				<img class="click" src="pics/click2.png" alt="Click" width="102" height="70">
+			</div>
+			<div style="background-image:url(pages/page2.jpg)">
+			</div>
+			<div style="background-image:url(pages/page3.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page1.ogg" type="audio/ogg">
+  					<source src="audio/page1.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page4.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page4.ogg" type="audio/ogg">
+  					<source src="audio/page4.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page5update.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/updatedpage3.ogg" type="audio/ogg">
+  					<source src="audio/updatedpage3.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page6.jpg)">
+				<audio class='audioPlayer' controls>
+
+  					<source src="audio/page6-2020.ogg" type="audio/ogg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page7.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page7.ogg" type="audio/ogg">
+  					<source src="audio/page7.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page8.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page8.ogg" type="audio/ogg">
+  					<source src="audio/page8.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page9.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page9.ogg" type="audio/ogg">
+  					<source src="audio/page9.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page10.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page10.ogg" type="audio/ogg">
+  					<source src="audio/page10.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div style="background-image:url(pages/page11.jpg)">
+				<audio class='audioPlayer' controls>
+ 					<source src="audio/page11.ogg" type="audio/ogg">
+  					<source src="audio/page11.mp3" type="audio/mpeg">
+  					Your browser does not support the audio element.
+				</audio>
+			</div>
+
+
+<div style="background-image:url()">
+<img src="pages/quiz.jpg" alt="Bach" width="450" height="167">
+
+
+
+
+<div class="quiz" id="accordion">
+<p style="font-style:italic;">Click on the correct response.</p>
+<h4>How many musical pieces did Bach compose?</h4>
+
+<div>
+<ol type="a">
+<li><input type="radio" name="1" id="1a" class="false" /><label for="1a" class="answer">a. 20</label></li>
+<li><input type="radio" name="1" id="1b" class="false" /><label for="1b" class="answer">b. 5,000</label></li>
+<li><input type="radio" name="1" id="1d" class="true" /><label for="1d" class="answer">c. 1,200</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 1 -->
+
+<h4>A harpsichord has strings that are:</h4>
+
+<div>
+<ol type="a">
+<li><input type="radio" name="2" id="2a" class="true" /><label for="2a" class="answer">a. Hammered</label></li>
+<li><input type="radio" name="2" id="2b" class="false" /><label for="2b" class="answer">b. Pulled</label></li>
+<li><input type="radio" name="2" id="2d" class="false" /><label for="2d" class="answer">c. Plucked</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 2 -->
+
+<h4>"Baroque"is a word that means:</h4>
+
+<div>
+<ol type="a">
+<li><input type="radio" name="3" id="3a" class="false" /><label for="3a" class="answer">a. Simple</label></li>
+<li><input type="radio" name="3" id="3b" class="true" /><label for="3b" class="answer">b. Decorated</label></li>
+<li><input type="radio" name="3" id="3c" class="false" /><label for="3c" class="answer">c. Broken</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 3 -->
+
+
+<div>
+  <h4>The earliest musical instrument is:</h4>
+<ol type="a">
+<li><input type="radio" name="4" id="4a" class="true" /><label for="4a" class="answer">a. Flute</label></li>
+<li><input type="radio" name="4" id="4b" class="false" /><label for="4b" class="answer">b. Violin</label></li>
+<li><input type="radio" name="4" id="4c" class="false" /><label for="4c" class="answer">c. Oboe</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 4 -->
+  
+  
+<h4>The singer with the highest pitch is called:</h4>
+<div>
+<ol type="a">
+<li><input type="radio" name="5" id="5a" class="false" /><label for="5a" class="answer">a. Bass</label></li>
+<li><input type="radio" name="5" id="5b" class="false" /><label for="5b" class="answer">b. Tenor</label></li>
+<li><input type="radio" name="5" id="5c" class="true" /><label for="5c" class="answer">c. Soprano</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 5 -->
+  
+  <h4>Which instrument makes sound by air blowing through pipes?</h4>
+<div>
+<ol type="a">
+<li><input type="radio" name="6" id="6a" class="false" /><label for="6a" class="answer">a. Piano</label></li>
+<li><input type="radio" name="6" id="6b" class="true" /><label for="6b" class="answer">b. Organ</label></li>
+<li><input type="radio" name="6" id="6c" class="false" /><label for="6c" class="answer">c. Harpsichord</label></li>
+<li class="feedback">Feedback</li>
+</ol>
+</div>
+<!-- END 6 -->
+
+</div>
+<button class="button" onclick="window.location.href='https://w3docs.com';">
+      Take me to more activities!
+</button>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:900,
+			
+			// Height
+
+			height:681,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+	
+
+
+
+</body>
+</html>
